@@ -6,12 +6,12 @@ def make_album(title, artist, track_count=''):
 	if track_count:
 		album["track_count"] = track_count
 	return album
-	
+
 a1 = make_album("man who sold the world", "david bowie", 8)
 
 a2= make_album("Harvest", "neil young")
 
-a3= make_album("OK computer", "radiohead")
+a3= make_album("different class", "pulp")
 
 albums = [a1, a2, a3]
 
