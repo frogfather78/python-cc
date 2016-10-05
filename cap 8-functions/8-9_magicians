@@ -1,0 +1,9 @@
+#8-9 magicians
+
+magicians = ["marvelloso", "harry potter", "bob"]
+
+def show_magicians(magicians):
+	for magician in magicians:
+		print(magician.title())
+
+show_magicians(magicians)
