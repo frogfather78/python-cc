@@ -1,6 +1,6 @@
 #8-9 magicians
 
-magicians = ["marvelloso", "harry potter", "bob"]
+magicians = ["marvelloso", "harry potter", "bob", 'lemmy']
 
 def show_magicians(magicians):
 	for magician in magicians:
@@ -10,10 +10,10 @@ def make_great(magicians):
 	numbers = list(range(0, len(magicians)))
 	for i in numbers:
 		magicians[i] = "The Great " + magicians[i].title()
-	return magicians	
-	
-		
-		
+	return magicians
+
+
+
 the_greats = make_great(magicians[:])
 
 show_magicians(magicians)
