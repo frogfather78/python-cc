@@ -1,5 +1,6 @@
 #9-1 restaurant
 #9-4 number served
+#9-6 ice cream
 
 class Restaurant():
 	"""modeling a restaurant, kinda"""
@@ -22,6 +23,16 @@ class Restaurant():
 		
 	def increment_number_served(self, increment):
 		self.number_served += increment
+
+class IceCreamStand(Restaurant):
+	"""modelling a specific type of restaurant"""
+	def __init__(self,name,cuisine,flavours):
+		super().__init__(name,cuisine)
+		self.flavours = flavours
+	
+	def list_flavours(self):
+		for flavour in self.flavours:
+			print(" -" + flavour.title())
 
 restaurant_0 = Restaurant('morleys', 'chicken')
 
@@ -48,4 +59,9 @@ print(restaurant_1.name.title() + " has served " +
 	str(restaurant_1.number_served) + " peeps today")
 #restaurant.open_restuarant()
 
+
+icecreamstand_1 = IceCreamStand('jen & bennys', 'ice cream',
+		['mint choc', 'vanilla', 'straw'])
 		
+icecreamstand_1.describe_restaurant()
+icecreamstand_1.list_flavours()
